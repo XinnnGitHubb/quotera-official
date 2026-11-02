@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotera | Fashion Modern untuk Semua</title>
+    <meta name="description" content="Quotera – Toko baju online modern. Koleksi fashion abstrak dan infografis untuk pria & wanita.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="closeFloat()">
+                <div class="logo-mark">Q</div>
+                <span>Quot<span class="logo-accent">era</span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" onclick="openFloat('home', event)">Home</a></li>
+                <li><a href="#" class="nav-link" onclick="openFloat('katalog', event)">Katalog</a></li>
+                <li><a href="#" class="nav-link" onclick="openFloat('tentang', event)">Tentang</a></li>
+                <li><a href="#" class="nav-link" onclick="openFloat('kontak', event)">Kontak</a></li>
+            </ul>
+
+            <button class="btn-menu" id="btnMenu" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero / Halaman Utama -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge">Koleksi Terbaru 2026</span>
+            <h1>Independent Clothing Brand</h1>
+            <p>Quotera hadir dengan pakaian modern untuk pria & wanita. Desain infografis, bahan berkualitas, teman nyaman buat jalan atau sekadar rebahan.</p>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="cloth-img" style="background-image: url('Produk/Tshirt.png')"></div>
+                <div class="card-copy">
+                    <div class="card-tag">T-Shirt</div>
+                    <p>Potongan klasik dengan bahan premium yang sejuk. Nyaman dipakai sendiri atau sebagai inner.</p>
+                </div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="cloth-img" style="background-image: url('Hoodie%20Oversize.webp')"></div>
+                <div class="card-copy">
+                    <div class="card-tag">Hoodie Oversize</div>
+                    <p>Siluet longgar yang memberi ruang gerak lebih. Pas buat cuaca dingin atau sekadar tampil santai.</p>
+                </div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="cloth-img" style="background-image: url('Kemeja%20Flanel.jpg')"></div>
+                <div class="card-copy">
+                    <div class="card-tag">Kemeja Flanel</div>
+                    <p>Lebih dari sekadar pola. Kemeja bertekstur lembut, nyaman dan selalu relevan di berbagai suasana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Quotera dan proses vendor -->
+    <div class="why-process">
+    <section class="features" id="fitur">
+        <div class="section-header">
+            <h2>Mengapa Memilih Quotera?</h2>
+            <p>Detail yang dipikirkan untuk menemani gaya sehari-hari</p>
+        </div>
+        <div class="features-points">
+            <p><span>01</span> Desain minimalis streetwear dengan cerita dan karakter.</p>
+            <p><span>02</span> Koleksi dikurasi bersama mitra vendor.</p>
+            <p><span>03</span> Nyaman dipakai dan mudah dipadukan.</p>
+            <p><span>04</span> Checkout dan pembayaran dilakukan melalui marketplace.</p>
+        </div>
+    </section>
+
+    <!-- Slideshow proses: pemilihan baju, sablon, dan packing -->
+    <section class="slideshow" id="slideshow">
+        <div class="slide-container">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="pilihbaju.jpeg" alt="Pemilihan baju berkualitas">
+                    <div class="slide-caption">
+                        <h3>Pemilihan Baju Berkualitas</h3>
+                        <p>Kami memilih kain katun pilihan yang nyaman, tahan lama, dan cocok untuk dicetak.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Sablon-process.jpeg" alt="Proses sablon">
+                    <div class="slide-caption">
+                        <h3>Proses Sablon</h3>
+                        <p>Desain dicetak dengan mesin press modern, hasil tajam dan tidak mudah luntur.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Packing.jpg" alt="Packing">
+                    <div class="slide-caption">
+                        <h3>Packing</h3>
+                        <p>Setiap baju dikemas dengan rapi dan aman sebelum dikirim ke pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-nav">
+                <button class="slide-btn prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slide-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="slide-btn next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Preview Katalog di Home -->
+    <section class="preview" id="preview">
+        <div class="section-header">
+            <h2>Produk Populer</h2>
+            <p>Pilihan terbaik dari koleksi Quotera</p>
+        </div>
+        <div class="product-grid" id="productGridHome">
+            <!-- diisi oleh JS -->
+        </div>
+        <div class="preview-cta">
+            <a href="#" class="btn btn-primary" onclick="openFloat('katalog', event)">Lihat Semua Katalog</a>
+        </div>
+    </section>
+
+    <!-- Marketplace tersedia -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Marketplace : Shopee, Tokopedia, dan TikTok Shop</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Windows (Jendela Mengambang) -->
+    <div class="float-overlay" id="floatOverlay" onclick="closeFloat()"></div>
+
+    <div class="float-window" id="floatHome">
+        <div class="float-header">
+            <h2>Selamat Datang di Quotera</h2>
+            <button class="float-close" onclick="closeFloat()">X</button>
+        </div>
+        <div class="float-body">
+            <div class="float-grid">
+                <div class="float-item">
+                    <div class="float-icon">S</div>
+                    <h3>Lihat Koleksi</h3>
+                    <p>Jelajahi koleksi Quotera dan temukan model yang sesuai dengan gayamu.</p>
+                </div>
+                <div class="float-item">
+                    <div class="float-icon">F</div>
+                    <h3>Informasi Produk</h3>
+                    <p>Kenali detail produk sebelum melanjutkan ke toko resmi Quotera.</p>
+                </div>
+                <div class="float-item">
+                    <div class="float-icon">P</div>
+                    <h3>Transaksi di Marketplace</h3>
+                    <p>Checkout dan pembayaran dilakukan di Shopee, Tokopedia, atau TikTok Shop.</p>
+                </div>
+            </div>
+        </div>
+        <div class="float-footer">
+            <a href="#" class="btn btn-primary" onclick="openFloat('katalog', closeFloat)">Lihat Katalog</a>
+        </div>
+    </div>
+
+    <div class="float-window" id="floatKatalog">
+        <div class="float-header">
+            <h2>Katalog Produk</h2>
+            <button class="float-close" onclick="closeFloat()">X</button>
+        </div>
+        <div class="float-body katalog-body">
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="pria">Pria</button>
+                <button class="filter-btn" data-filter="wanita">Wanita</button>
+                <button class="filter-btn" data-filter="aksesoris">Aksesoris</button>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Produk diisi oleh JS -->
+            </div>
+        </div>
+        <div class="float-footer">
+            <a href="#" class="btn btn-outline" onclick="closeFloat()">Tutup</a>
+        </div>
+    </div>
+
+    <div class="float-window" id="floatTentang">
+        <div class="float-header">
+            <h2>Tentang Kami</h2>
+            <button class="float-close" onclick="closeFloat()">X</button>
+        </div>
+        <div class="float-body tentang-body">
+            <div class="about-content">
+                <h3>Quotera – Gaya Modern, Kualitas Terpercaya</h3>
+                <p>Berdiri sejak 31 Oktober 2026, Quotera hadir sebagai ruang berekspresi melalui pakaian. Kami memadukan gaya minimalist streetwear dan desain tipografi puitis untuk menyampaikan pesan dalam setiap fase kehidupan.</p>
+                <div class="about-values">
+                    <p>Material premium yang sejuk dan nyaman dipakai harian</p>
+                    <p>Desain fresh minimalis mengikuti tren terkini</p>
+                    <p>Estetika streetwear eksklusif dengan harga terjangkau</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img class="about-profile" src="Foto Profil.jpg" alt="Profil Quotera">
+            </div>
+        </div>
+        <div class="float-footer">
+            <a href="#" class="btn btn-outline" onclick="closeFloat()">Tutup</a>
+        </div>
+    </div>
+
+    <!-- Jendela Pemesanan Produk -->
+    <div class="float-window" id="floatPemesanan">
+        <div class="float-header">
+            <h2>Pesan Produk</h2>
+            <button class="float-close" onclick="closeFloat()">X</button>
+        </div>
+        <div class="float-body pemesanan-body" id="pemesananBody">
+            <!-- diisi oleh JS -->
+        </div>
+        <div class="float-footer">
+            <a href="#" class="btn btn-outline" onclick="closeFloat()">Batal</a>
+        </div>
+    </div>
+
+    <div class="float-window" id="floatKontak">
+        <div class="float-header">
+            <h2>Kontak Kami</h2>
+            <button class="float-close" onclick="closeFloat()">X</button>
+        </div>
+        <div class="float-body kontak-body">
+            <div class="kontak-grid">
+                <div class="kontak-info">
+                    <div class="kontak-item">
+                        <span class="kontak-icon">L</span>
+                        <div>
+                            <strong>Alamat</strong>
+                            <span>Yogyakarta, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-icon">T</span>
+                        <div>
+                            <strong>Telepon</strong>
+                            <span>+62 819-4782-8746</span>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-icon">E</span>
+                        <div>
+                            <strong>Email</strong>
+                            <span>kyyzen123@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="sosial-media">
+                        <span style="font-size:0.85rem;color:var(--text-muted);margin-bottom:8px;display:block;">Ikuti kami:</span>
+                        <div class="sosial-row">
+                            <a href="#" target="_blank" class="sosial-btn">TikTok</a>
+                            <a href="#" target="_blank" class="sosial-btn">Instagram</a>
+                            <a href="#" target="_blank" class="sosial-btn">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontak-form">
+                    <form id="formKontak">
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" placeholder="Nama Kamu" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea rows="4" placeholder="Tulis pesanmu di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="float-footer">
+            <a href="#" class="btn btn-outline btn-full" onclick="closeFloat()">Tutup</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-mark">Q</div>
+                <span>Quot<span class="logo-accent">era</span></span>
+                <p>Fashion modern untuk semua. Berkualitas, terjangkau, dan trendy.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Toko</h4>
+                    <a href="#" onclick="openFloat('katalog', event)">Katalog Produk</a>
+                    <a href="#" onclick="openFloat('tentang', event)">Tentang Kami</a>
+                    <a href="#" onclick="openFloat('kontak', event)">Kontak</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Bantuan</h4>
+                    <a href="#">Panduan Pemesanan</a>
+                    <a href="#">Kebijakan Pengiriman</a>
+                    <a href="#">Kebijakan Retur</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Quotera. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
