@@ -170,9 +170,9 @@ function openPemesanan(id) {
                     <span>Anda akan diarahkan ke platform resmi untuk melihat toko dan menyelesaikan transaksi.</span>
                 </div>
                 <div class="metode-marketplace">
-                    <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="mkt-btn shopee">Lanjut ke Shopee</a>
-                    <a href="https://tokopedia.com" target="_blank" rel="noopener noreferrer" class="mkt-btn tokopedia">Lanjut ke Tokopedia</a>
-                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="mkt-btn tiktok">Lanjut ke TikTok Shop</a>
+                    <a href="https://s.shopee.co.id/9V2ihOozZN" target="_blank" rel="noopener noreferrer" class="mkt-btn shopee">Lanjut ke Shopee</a>
+                    <a href="https://www.tokopedia.com/dcsin/early-launching-kaos-hitam-lengan-pendek-pria-wanita-cotton-combed-24s-quotera-1738338540075058832" target="_blank" rel="noopener noreferrer" class="mkt-btn tokopedia">Lanjut ke Tokopedia</a>
+                    <a href="https://vt.tokopedia.com/t/ZS9ynu5VHCrXw-HL7nq/" target="_blank" rel="noopener noreferrer" class="mkt-btn tiktok">Lanjut ke TikTok Shop</a>
                 </div>
             </div>
             <p class="marketplace-notice">Quotera tidak memproses pembayaran di website ini. Pembayaran dan checkout berlangsung di marketplace resmi agar terhindar dari penipuan dan kejadian yang tidak diinginkan.</p>
